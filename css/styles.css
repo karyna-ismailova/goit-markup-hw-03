@@ -15,7 +15,7 @@ main {
 
 img {
     display: block;
-    max-width: 100%;
+    /* min-width: 100%; */
     object-fit: cover;
 }
 
@@ -24,6 +24,7 @@ ul{
     margin-top: 0;
     margin-left: 0;
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -36,14 +37,14 @@ a{
 }
 
 .container {
-
-    max-width:1000 px;
-    margin-left:156px;
-    margin-right:156px;
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section{
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .secondary-title{
@@ -77,6 +78,7 @@ a{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px
 }
 
 .accent-header {
@@ -86,6 +88,7 @@ a{
 .navbar-item {
     font-weight: 500;
     color: #2e2f42;
+    padding: 24px 0
 }
 .navbar-item:hover,
 .navbar-item:active,
@@ -109,7 +112,7 @@ a{
 
 .navbar{
     display: flex;
-    gap: 76px;
+
     align-items: center;
 }
 
@@ -147,6 +150,7 @@ a{
 
 }
 .hero-title {
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
@@ -164,9 +168,10 @@ a{
     background: #4d5ae5;
     cursor: pointer;
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none;
 }
 
 .button:hover,
@@ -182,6 +187,10 @@ button:focus{
 
 
 /* Advantages Section */
+
+/* .advantages-section{
+    padding: 120px 0;
+} */
 
 .visually-hidden {
     position: absolute;
@@ -200,7 +209,7 @@ button:focus{
 .advantages-card{
     display: flex;
     flex-direction: column;
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
     
 }
 .advantages-list{
@@ -211,9 +220,9 @@ button:focus{
 
 /* Team Section */
 
-.team-title{
+/* .team-title{
     padding-top: 120px;
-}
+} */
 
 .teammate {
     margin-top: 32px;
@@ -226,7 +235,7 @@ button:focus{
 }
 
 .team-section{
-    padding-bottom: 120px;
+    /* padding-bottom: 120px; */
     background: #f4f4fd;
 }
 
@@ -234,7 +243,7 @@ button:focus{
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
     align-items: center;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
@@ -270,7 +279,7 @@ button:focus{
 .portfolio-card{
     display: flex;
     flex-direction: column;
-    width: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
     border: 1px solid #e7e9fc;
 
 }
