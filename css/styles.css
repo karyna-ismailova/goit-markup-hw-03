@@ -1,19 +1,54 @@
 body{
+    margin: 0;
     font-family: Roboto, sans-serif;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
     background: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+main {
+    flex-grow: 1;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
 ul{
     list-style: none;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 a{
     text-decoration: none;
 }
 
-h2{
+.container {
+
+    max-width:1000 px;
+    margin-left:156px;
+    margin-right:156px;
+}
+
+.section{
+    margin-bottom: 120px;
+}
+
+.secondary-title{
+
+    margin-bottom: 72px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -23,7 +58,8 @@ h2{
     text-transform: capitalize;
 }
 
-h3{
+.sub-title{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -31,10 +67,7 @@ h3{
     letter-spacing: 0.02em;
 }
 
-.hero-section{
-    background: #2e2f42;
-
-}
+/* Header */
 
 .icon {
     font-family: "Raleway", sans-serif;
@@ -64,6 +97,37 @@ h3{
     font-style: normal;
 }
 
+.navbar-links{
+    display: flex;
+    gap: 40px;
+}
+
+.address-links{
+    display: flex;
+    gap: 40px;
+}
+
+.navbar{
+    display: flex;
+    gap: 76px;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    gap: 332px;
+
+}
+
+.header-section{
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .address-item {
     color: #434455;
 }
@@ -72,6 +136,16 @@ h3{
     color: #404bbf;
 }
 
+/* Hero Section */
+
+.hero-section{
+    /* width: 1440px;
+    height: 600px; */
+    background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+
+}
 .hero-title {
     font-weight: 700;
     font-size: 56px;
@@ -79,6 +153,7 @@ h3{
     text-align: center;
     color: #fff;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
 }
 
 .button{
@@ -88,22 +163,138 @@ h3{
     color: #fff;
     background: #4d5ae5;
     cursor: pointer;
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+
 .button:hover,
 button:focus{
     background: #404bbf;
 }
 
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Advantages Section */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages-card{
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 72px) / 4);
+    
+}
+.advantages-list{
+    display: flex;
+    gap: 24px;
+}
+
+
+/* Team Section */
+
+.team-title{
+    padding-top: 120px;
+}
+
+.teammate {
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.team-job {
+    margin-bottom: 32px;
+}
+
 .team-section{
+    padding-bottom: 120px;
     background: #f4f4fd;
 }
 
 .team-item{
+    display: flex;
+    flex-direction: column;
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    align-items: center;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
-.footer{
+.team-cards{
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Portfolio Section */
+
+.portfolio-item {
+    margin-top: 32px;
+    padding-left: 16px;
+}
+
+.portfolio-describtion {
+    margin-bottom: 32px;
+    padding-left: 16px;
+}
+
+.portfolio-list{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.portfolio-card{
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 48px) / 3);
+    border: 1px solid #e7e9fc;
+
+}
+/* .portfolio-name{
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+} */
+
+
+
+/* Footer Section */
+
+.footer-section{
     background: #2e2f42;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
 }
 
 .accent-footer {
