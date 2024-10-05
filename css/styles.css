@@ -238,13 +238,12 @@ button:focus{
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
     border-radius: 0px 0px 4px 4px;
-    border-top: none;
 }
 
 .team-card{
     display: flex;
     flex-direction: column;
-    padding: 32px 16px;
+    padding: 32px 0;
 
 }
 
@@ -257,7 +256,7 @@ button:focus{
 
 /* Portfolio Section */
 
-.portfolio-item {
+/* .portfolio-item {
     margin-top: 32px;
     padding-left: 16px;
 }
@@ -265,7 +264,7 @@ button:focus{
 .portfolio-describtion {
     margin-bottom: 32px;
     padding-left: 16px;
-}
+} */
 
 .portfolio-list{
     align-items: center;
@@ -276,6 +275,7 @@ button:focus{
     row-gap: 48px;
 }
 
+
 .portfolio-card{
     display: flex;
     flex-direction: column;
@@ -285,6 +285,8 @@ button:focus{
     display: flex;
     flex-direction: column;
     border: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    border-top: none;
 }
 
 
