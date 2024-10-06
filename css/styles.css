@@ -86,6 +86,7 @@ a{
 }
 
 .navbar-item {
+    display: block;
     font-weight: 500;
     color: #2e2f42;
     padding: 24px 0
@@ -118,16 +119,11 @@ a{
 
 .header-container{
     display: flex;
-    justify-content: center;
-    gap: 332px;
-
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-section{
-    padding-left: 156px;
-    padding-right: 156px;
-    padding-bottom: 24px;
-    padding-top: 24px;
     border-bottom: 1px solid #e7e9fc;
 }
 
